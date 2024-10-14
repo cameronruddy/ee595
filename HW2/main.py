@@ -9,7 +9,7 @@ try:
     with open(FILENAME) as f:
         raw_data = [line.rstrip().split(",") for line in f]
 except FileNotFoundError:
-    printf("No file named {}".format(FILENAME))
+    print("No file named {}".format(FILENAME))
     sys.exit(0)
 
 # Enter into x and y arrays, convert from str to float #
